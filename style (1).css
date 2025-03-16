@@ -1,0 +1,86 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the quiz */
+.quiz-container {
+    width: 60%;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h1 {
+    color: #ff6b6b;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Question styling */
+#question {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Answer buttons */
+#answers {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button {
+    background: linear-gradient(135deg, #56ccf2, #2f80ed);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2f80ed, #1c60c6);
+    transform: scale(1.05);
+}
+
+/* Next button */
+#next-btn {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #28a745, #218838);
+}
+
+/* Correct and Incorrect answer display */
+.correct {
+    background: linear-gradient(135deg, #28a745, #218838) !important;
+}
+
+.wrong {
+    background: linear-gradient(135deg, #e74c3c, #c0392b) !important;
+}
+
+/* Result message */
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .quiz-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
